@@ -1,0 +1,177 @@
+html {
+    height: 100%;
+    background: linear-gradient(to bottom right, red, yellow);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+h1:nth-child(2) {
+    font-size: 1.75em;
+}
+
+h1:nth-child(1) {
+    font-size: 3em;
+    font-family: 'Monoton', cursive;
+    font-weight: none;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    text-align: start;
+    max-width: 520px;
+    width: 50%;
+    margin: auto;
+}
+
+ul li {
+    background: linear-gradient(to top left, blue, white);
+    padding: 10px;
+}
+
+li h3 {
+    font-family: 'Monoton', cursive;
+    display: inline;
+    padding-right: 5px;
+    font-weight: none;
+}
+
+#fiveRandomNumbers {
+    margin: auto;
+    max-width: 520px;
+    width: 50%;
+    text-align: center;
+}
+
+#fiveRandomNumbers > p {
+    margin: 5px;
+}
+
+#fiveRandomNumbers > h1 {
+    font-family: 'Monoton', cursive;
+}
+
+div#results > p {
+    font-size: 1.25em;
+}
+
+.row {
+    display: flex;
+}
+
+.left {
+    flex: 66%
+}
+
+.right {
+    flex: 33%;
+    padding: 75px;
+}
+
+/* Button Styling Below */
+
+#btn {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 8px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+  
+#btn:hover,
+#btn:focus {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+#btn:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+#btn:disabled {
+    color: rgba(0, 0, 0, 0.38);
+    background-color: rgba(0, 0, 0, 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+#btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#btn:hover::before {
+    opacity: 0.12;
+}
+
+#btn:focus::before {
+    opacity: 0.2;
+}
+
+#btn:active::before {
+    opacity: 0.32;
+}
+
+#btn:disabled::before {
+    opacity: 0;
+}
+
+#btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: currentColor;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1) ;
+    transition: opacity 1s, transform 0.5s;
+}
+
+#btn:active::after {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+#btn:disabled::after {
+    opacity: 0;
+}

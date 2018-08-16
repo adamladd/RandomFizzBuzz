@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Is that a FizzBuzz?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+</head>
+<body>
+    <div class="row">
+        <div class="left">
+            <header>
+                <h1>FizzBuzz!</h1>
+                <h1>The game you know and love in a whole new way!</h1>
+                <h3>There are four possible options in our game of FizzBuzz.</h3>
+                <ul>
+                    <li><h3>A.</h3>Fizz, any number divisible by 3.</li>
+                    <li><h3>B.</h3>Buzz, any number divisible by 5.</li>
+                    <li><h3>C.</h3>FizzBuzz, any number divisible by 3 <em>and</em> 5</li>
+                    <li><h3>D.</h3>None of the above, a number that is not divisible by either 3 or 5.</li>
+                </ul>
+                <section>
+                    <p>Click the button below to generate five random numbers.</p>
+                    <p>Is the number A, B, C or D?</p>
+                    <p>Quickly now, after 15 seconds the results will appear!</p>
+                </section>
+                <button id="btn">Click Here!</button>
+            </header>
+        </div>
+        <div class="right">
+            <article>
+                <div id="fiveRandomNumbers"></div>
+                <div id="results"></div>
+            </article>
+        </div>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
